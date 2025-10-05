@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body style="margin:0; padding:0; background:#f0f0f0; height:100vh; display:flex; align-items:center; justify-content:center; overflow:hidden;">
+<div style="
+  font-size:2em;
+  font-weight:bold;
+  background:linear-gradient(90deg, #ff0055, #00ffff, #ffaa00, #ff0055);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: scroll 6s linear infinite, colorChange 4s ease infinite;
+">这里啥也没有</div>
+<style>
+@keyframes scroll {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+@keyframes colorChange {
+  0% { background-position: 0%; }
+  100% { background-position: 100%; }
+}
+</style>
+</body>
+</html>
